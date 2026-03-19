@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # To run on windows use MSYS2 or gitbash.
