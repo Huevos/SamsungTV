@@ -35,4 +35,7 @@ Samsung TV Plus does not provide Video-On-Demand
 - german
 
 ## Links
-- Installation: https://opencockpit.github.io/SamsungTV
+- Installation:
+    The plugin can be downloaded and installed from:
+       -- OpenViX plugin feed or
+       -- OpenCockpit feed: https://opencockpit.github.io/SamsungTV

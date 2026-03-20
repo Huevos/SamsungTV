@@ -1,10 +1,10 @@
 # Copyright (C) 2026 by xcentaurix
 
 from Components.config import ConfigSelection, ConfigSubsection, config
+from Tools.CountryCodes import ISO3166
 
 from . import _
 from .Variables import NUMBER_OF_LIVETV_BOUQUETS
-from Tools.CountryCodes import ISO3166
 
 
 # Regions available on Samsung TV Plus (via i.mjh.nz)

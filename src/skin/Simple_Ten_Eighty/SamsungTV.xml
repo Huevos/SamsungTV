@@ -5,10 +5,10 @@
 		<ePixmap position="70,170" size="615,750" pixmap="extensions/transblack.png" zPosition="1" alphatest="blend" transparent="1"/><!-- list background -->
 		<widget name="feedlist" position="70,170" size="615,728" enableWrapAround="1" zPosition="5" scrollbarMode="showOnDemand" transparent="1"/>
 
-		<widget source="updated" render="Pixmap" pixmap="extensions/transblack.png" position="70,950" size="615,50" zPosition="1" transparent="1" alphatest="blend"><!-- updated background -->
+		<widget source="updated" render="Pixmap" pixmap="extensions/transblack.png" position="70,950" size="615,57" zPosition="1" transparent="1" alphatest="blend"><!-- updated background -->
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="updated" render="Label" position="70,950" size="615,50" font="Regular;25" zPosition="5" transparent="1" valign="center" halign="center"/>
+		<widget source="updated" render="Label" position="70,950" size="615,57" font="Regular;25" zPosition="5" transparent="1" valign="center" halign="center"/>
 		<panel name="PigLessTemplate"/>
 		<widget name="loading" position="center,center" size="800,60" font="Regular;50" backgroundColor="#00000000" transparent="0" zPosition="10" halign="center" valign="center" />
 
