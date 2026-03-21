@@ -50,5 +50,6 @@ cd $CURRENT
 cp $TEMP/$PATTERN $CURRENT
 cp $TEMP/po/*.po $CURRENT/po/.
 cp $TEMP/po/*.pot $CURRENT/po/.
+cp $TEMP/meta/control/control $CURRENT/meta/control/.
 
 rm -rf $TEMP # clean up
