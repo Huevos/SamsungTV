@@ -48,5 +48,7 @@ ar -r ../${package}_${version_updated}_all.ipk debian-binary control.tar.gz data
 cd $CURRENT
 
 cp $TEMP/$PATTERN $CURRENT
+cp $TEMP/po/*.po $CURRENT/po/.
+cp $TEMP/po/*.pot $CURRENT/po/.
 
 rm -rf $TEMP # clean up

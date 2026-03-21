@@ -1,181 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SamsungTV\n"
-"POT-Creation-Date: 2026-03-13 19:28+0100\n"
-"PO-Revision-Date: 2026-03-13 19:30+0100\n"
-"Last-Translator: xcentaurix\n"
-"Language-Team: xcentaurix\n"
-"Language: de_DE@formal\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-21 18:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.7\n"
-"X-Poedit-Basepath: ../src\n"
-"X-Poedit-SearchPath-0: .\n"
 
-msgid "service name"
-msgstr ""
-
-msgid "service reference"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Yes"
-msgstr ""
-
-msgid "No"
-msgstr ""
-
+#: ../src/SamsungTVDownload.py:73
 msgid "A silent download is in progress."
 msgstr ""
 
-msgid "picons"
+#: ../src/plugin.py:523
+msgid "Browse channels, EPG, and on-demand content from Samsung TV Plus"
 msgstr ""
 
-msgid "Fetching picons..."
-msgstr ""
-
-msgid "LiveTV update completed"
-msgstr ""
-
-msgid "Processing data..."
-msgstr ""
-
-msgid "Waiting for Channel: "
-msgstr ""
-
-msgid "Samsung TV Plus updating"
-msgstr ""
-
-msgid "Please wait..."
-msgstr ""
-
-msgid "Updating: Samsung TV Plus %s"
-msgstr ""
-
-msgid "The download is in progress. Exit now?"
-msgstr ""
-
-msgid ""
-"There is no data, it is possible that Samsung TV Plus is not available in "
-"your region"
-msgstr ""
-
+#: ../src/plugin.py:102
 msgid "Channel Categories"
 msgstr ""
 
-msgid "Loading data... Please wait"
+#: ../src/plugin.py:358
+msgid "Create LiveTV Bouquet"
 msgstr ""
 
-msgid "Exit"
-msgstr ""
-
-msgid "TMDb Search"
-msgstr ""
-
-msgid "IMDb Search"
-msgstr ""
-
-msgid "MENU"
-msgstr ""
-
-msgid "Go forward one level including starting playback"
-msgstr ""
-
-msgid "Go back one level including exiting"
-msgstr ""
-
+#: ../src/plugin.py:127
 msgid "Create or update Samsung TV Plus live bouquets"
 msgstr ""
 
+#: ../src/plugin.py:408
+msgid "Data location"
+msgstr ""
+
+#: ../src/plugin.py:492
+msgid "Do you want to resume this playback?"
+msgstr ""
+
+#: ../src/plugin.py:524
+msgid "Download Samsung TV Plus bouquet, picons and EPG"
+msgstr ""
+
+#: ../src/plugin.py:107
+msgid "Exit"
+msgstr ""
+
+#: ../src/SamsungTVDownload.py:94
+msgid "Fetching picons..."
+msgstr ""
+
+#: ../src/plugin.py:128
 msgid "Go back one level"
 msgstr ""
 
+#: ../src/plugin.py:126
+msgid "Go back one level including exiting"
+msgstr ""
+
+#: ../src/plugin.py:125
+msgid "Go forward one level including starting playback"
+msgstr ""
+
+#: ../src/plugin.py:110
+msgid "IMDb Search"
+msgstr ""
+
+#: ../src/plugin.py:353
+msgid "LiveTV Bouquet last updated:"
+msgstr ""
+
+#: ../src/plugin.py:356
+msgid "LiveTV Bouquet needs updating. Press GREEN."
+msgstr ""
+
+#: ../src/plugin.py:405
+#, python-format
+msgid "LiveTV bouquet %s"
+msgstr ""
+
+#: ../src/SamsungTVDownload.py:98
+msgid "LiveTV update completed"
+msgstr ""
+
+#: ../src/plugin.py:105
+msgid "Loading data... Please wait"
+msgstr ""
+
+#: ../src/plugin.py:113
+msgid "MENU"
+msgstr ""
+
+#: ../src/SamsungTVConfig.py:36
+msgid "No"
+msgstr ""
+
+#: ../src/SamsungTVConfig.py:35 ../src/SamsungTVConfig.py:48
+#: ../src/SamsungTVConfig.py:54
+msgid "None"
+msgstr ""
+
+#: ../src/plugin.py:129
 msgid "Open the plugin configuration screen"
 msgstr ""
 
-msgid "Search for information in %s"
+#: ../src/plugin.py:407
+msgid "Picon type"
 msgstr ""
 
-msgid "The Movie Database"
+#: ../src/SamsungTVDownload.py:291
+msgid "Please wait..."
 msgstr ""
 
-msgid "the Internet Movie Database"
+#: ../src/SamsungTVDownload.py:113
+msgid "Processing data..."
 msgstr ""
 
-msgid "Scroll the information field"
+#: ../src/plugin.py:401
+msgid "Region"
 msgstr ""
 
+#: ../src/plugin.py:405
+#, python-format
+msgid "Region for which LiveTV bouquet %s will be created."
+msgstr ""
+
+#: ../src/plugin.py:421
+msgid "Remove LiveTV Bouquet"
+msgstr ""
+
+#: ../src/plugin.py:413
+msgid "Remove picons"
+msgstr ""
+
+#: ../src/plugin.py:492
+#, python-format
+msgid "Resume position at %s"
+msgstr ""
+
+#: ../src/plugin.py:172 ../src/plugin.py:299 ../src/plugin.py:328
+#: ../src/plugin.py:523
 msgid "Samsung TV Plus"
 msgstr ""
 
+#: ../src/plugin.py:397
+msgid "Samsung TV Plus Setup"
+msgstr ""
+
+#: ../src/SamsungTVDownload.py:284
+msgid "Samsung TV Plus updating"
+msgstr ""
+
+#: ../src/plugin.py:144 ../src/plugin.py:145
+msgid "Scroll the information field"
+msgstr ""
+
+#: ../src/plugin.py:136
+#, python-format
+msgid "Search for information in %s"
+msgstr ""
+
+#: ../src/plugin.py:401
+msgid "Select the region for the channel list."
+msgstr ""
+
+#: ../src/plugin.py:525
+msgid "Silently download Samsung TV Plus"
+msgstr ""
+
+#: ../src/plugin.py:110
+msgid "TMDb Search"
+msgstr ""
+
+#: ../src/plugin.py:136
+msgid "The Movie Database"
+msgstr ""
+
+#: ../src/plugin.py:343
 msgid ""
 "The Samsung TV Plus bouquets in your channel list have been updated.\n"
 "\n"
 "They will now be rebuilt automatically every 5 hours."
 msgstr ""
 
+#: ../src/SamsungTVDownload.py:303
+msgid "The download is in progress. Exit now?"
+msgstr ""
+
+#: ../src/plugin.py:240 ../src/SamsungTVDownload.py:328
+msgid "There is no data, it is possible that Samsung TV Plus is not available in your region"
+msgstr ""
+
+#: ../src/plugin.py:352 ../src/plugin.py:355
 msgid "Update LiveTV Bouquet"
 msgstr ""
 
-msgid "LiveTV Bouquet last updated:"
+#: ../src/SamsungTVDownload.py:296
+#, python-format
+msgid "Updating: Samsung TV Plus %s"
 msgstr ""
 
-msgid "LiveTV Bouquet needs updating. Press GREEN."
-msgstr ""
-
-msgid "Create LiveTV Bouquet"
-msgstr ""
-
-msgid "Samsung TV Plus Setup"
-msgstr ""
-
-msgid "Region"
-msgstr ""
-
-msgid "Select the region for the channel list."
-msgstr ""
-
-msgid "LiveTV bouquet %s"
-msgstr ""
-
-msgid "Region for which LiveTV bouquet %s will be created."
-msgstr ""
-
-msgid "Picon type"
-msgstr ""
-
-msgid ""
-"Using service name picons means they will continue to work even if the "
-"service reference changes."
-msgstr ""
-
-msgid "Data location"
-msgstr ""
-
+#: ../src/plugin.py:408
 msgid "Used for storing video cover graphics, etc."
 msgstr ""
 
-msgid "Remove picons"
+#: ../src/plugin.py:407
+msgid "Using service name picons means they will continue to work even if the service reference changes."
 msgstr ""
 
-msgid "Remove LiveTV Bouquet"
+#: ../src/SamsungTVDownload.py:207
+msgid "Waiting for Channel: "
 msgstr ""
 
-msgid "Do you want to resume this playback?"
+#: ../src/SamsungTVConfig.py:36
+msgid "Yes"
 msgstr ""
 
-msgid "Resume position at %s"
+#: ../src/SamsungTVDownload.py:93
+msgid "picons"
 msgstr ""
 
-msgid "Browse channels, EPG, and on-demand content from Samsung TV Plus"
+#: ../src/SamsungTVConfig.py:35
+msgid "service name"
 msgstr ""
 
-msgid "Download Samsung TV Plus bouquet, picons and EPG"
+#: ../src/SamsungTVConfig.py:35
+msgid "service reference"
 msgstr ""
 
-msgid "Silently download Samsung TV Plus"
+#: ../src/plugin.py:136
+msgid "the Internet Movie Database"
 msgstr ""
