@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#
-# To run on windows use MSYS2 or gitbash.
-# Some aditional packages may need installing.
-# e.g. ar.exe
-#
-
 PATTERN="*_all.ipk"
 CURRENT=`pwd`
 TEMP=$(mktemp -d)
@@ -20,37 +14,31 @@ cd po
 ./updateallpo-multiOS.sh
 cd ..
 
-git_revision=`git rev-list HEAD --count`
-git_hash=`git rev-parse HEAD`
-
 cd meta
 
-version_orig=`grep Version ./control/control`
-# everything before the + sign
-version_short=${version_orig%%+*}
-version=`echo "$version_short" | cut -d ' ' -f 2`
-version_updated="${version}+git${git_revision}+${git_hash:0:8}+${git_hash:0:10}-r0"
-version_new="Version: ${version_updated}"
-sed -i "s/\b${version_orig}/${version_new}/g" ./control/control
-
+# extract package name from control
 package=$(grep Package ./control/control|cut -d " " -f 2)
+echo "Package: $package"
+# extract version from control
+version=$(grep Version ./control/control|cut -d " " -f 2)
+echo "Version: $version"
+# extract plugin name from Version.py
+plugin=$(grep PLUGIN ../src/Version.py|cut -d '"' -f 2)
+echo "Plugin: $plugin"
 
-mkdir -p etc/enigma2
-cp -ra ../src/skin/. ./etc/enigma2
-rm -rf ../src/skin
-mkdir -p usr/lib/enigma2/python/Plugins/Extensions/SamsungTV
-cp -ra ../src/. ./usr/lib/enigma2/python/Plugins/Extensions/SamsungTV
-tar -cvzf data.tar.gz usr etc
+mkdir -p usr/lib/enigma2/python/Plugins/Extensions/$plugin
+cp -ra ../src/. ./usr/lib/enigma2/python/Plugins/Extensions/$plugin
+tar -cvzf data.tar.gz usr
 
 cd control
-tar -cvzf control.tar.gz ./control ./postrm
+tar -cvzf control.tar.gz ./*
 cd ..
 mv ./control/control.tar.gz .
 
-ar -r ../${package}_${version_updated}_all.ipk debian-binary control.tar.gz data.tar.gz
+ar -r ../${package}_${version}_all.ipk debian-binary control.tar.gz data.tar.gz
 
 cd $CURRENT
 
 cp $TEMP/$PATTERN $CURRENT
 
-rm -rf $TEMP # clean up
+# rm -rf $TEMP # clean up
