@@ -8,20 +8,20 @@ RDEPENDS:${PN} = "python3-multiprocessing python3-requests python3-zoneinfo"
 
 inherit gitpkgv allarch python3native gettext
 
-PV = "1.0+git"
+version=$(grep Version {S}/meta/control/control|cut -d ' ' -f 2)
+
+PV = "$version+git"
 MAINTAINER = "OpenViX"
-PKGV = "1.0+git${GITPKGV}"
+PKGV = "$version+git${GITPKGV}"
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/OpenCockpit/SamsungTV.git;protocol=https;branch=master"
 HOMEPAGE = "https://github.com/OpenCockpit/SamsungTV"
 
-pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/SamsungTV"
+pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/$plugin"
 configpath = "/etc/enigma2"
 
 do_install:append() {
 	install -d ${D}${configpath}
-	cp -r ${S}/src/skin/* ${D}${configpath}/
-	rm -rf ${S}/src/skin
 	install -d ${D}${pluginpath}
 	cp -r ${S}/src/* ${D}${pluginpath}/
 	python3 -m compileall -o2 -b ${D} -d /
@@ -33,7 +33,7 @@ do_install:append() {
 			cc=${filename%%.*}
 			folder=${D}${pluginpath}/locale/${cc}/LC_MESSAGES
 			mkdir -p ${folder}
-			/usr/bin/msgfmt -o ${folder}/m3uiptv.mo ${po}
+			/usr/bin/msgfmt -o ${folder}/SamsungTV.mo ${po}
 		done
 	fi
 }

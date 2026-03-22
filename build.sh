@@ -19,10 +19,9 @@ git_hash=`git rev-parse HEAD`
 
 cd meta
 
-# update version in control file
+# update version in control file in ipk image file only
 version_orig=`grep Version ./control/control`
-version_short=${version_orig%%+*}
-version=`echo "$version_short" | cut -d ' ' -f 2`
+version=`echo "$version_orig" | cut -d ' ' -f 2`
 version_updated="${version}+git${git_revision}+${git_hash:0:8}+${git_hash:0:10}-r0"
 version_new="Version: ${version_updated}"
 sed -i "s/\b${version_orig}/${version_new}/g" ./control/control
@@ -50,6 +49,5 @@ cd $CURRENT
 cp $TEMP/$PATTERN $CURRENT
 cp $TEMP/po/*.po $CURRENT/po/.
 cp $TEMP/po/*.pot $CURRENT/po/.
-cp $TEMP/meta/control/control $CURRENT/meta/control/.
 
 rm -rf $TEMP # clean up
